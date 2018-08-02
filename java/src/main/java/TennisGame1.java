@@ -1,8 +1,8 @@
 
 public class TennisGame1 implements TennisGame {
     
-    private int m_score1 = 0;
-    private int m_score2 = 0;
+    private int player1score = 0;
+    private int player2score = 0;
     private String player1Name;
     private String player2Name;
 
@@ -11,16 +11,36 @@ public class TennisGame1 implements TennisGame {
         this.player2Name = player2Name;
     }
 
-    public void wonPoint(String playerName) {
-        if (playerName == "player1")
-            m_score1 += 1;
-        else
-            m_score2 += 1;
+    public void wonPoint(String playerName) {                  
+        if (playerName == "player1")             
+            player1score += 1;
+        else                
+            player2score += 1;
     }
 
     public String getScore() {
-        String score = "";
-        int tempScore=0;
+        String[] scores = {"Love" , "Fifteen" , "Forty", "Fifty";
+        
+        if (isWinner()) {
+            return "Win for" + getPlayerName() ;
+          //return String.format(" Win for %s, getPlayerName()) ; 
+        }
+        if (isAdvantage()) {
+              return "Advantage" + getPlayerName() ;
+        }
+        if (isDeuce()) {
+              return "Deuce"
+                  
+        if (isAll()) {
+              return scores[
+              ] + "-All" ; 
+        }
+        
+        return scores[player1score] + "-" + scores[Playerscore]  
+            
+        private boolean () {
+            return xxx() [Play1swcore - Play2score >=2] ;
+        }    
         if (m_score1==m_score2)
         {
             switch (m_score1)
@@ -73,4 +93,6 @@ public class TennisGame1 implements TennisGame {
         }
         return score;
     }
+        private string getPlayerName() {
+        return (player1score > player2score) ? player1score : player2score ;
 }
