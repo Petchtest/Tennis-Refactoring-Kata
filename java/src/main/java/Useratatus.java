@@ -1,5 +1,40 @@
 
-public class TennisGame1 implements TennisGame {
+public class status {
+    
+    static  int active = 0 ;
+    static  int inactive = 1;
+    static  int lock = 1;       
+}       
+        
+public void xxx
+    case active 
+       print -> active
+    case inactive
+       print -> inactive 
+    casE lock 
+       print -> lock 
+        
+public void loginuser(User User) {
+     user.login() ; 
+}
+
+public xxx
+      print "Status user" + status ; 
+     
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     
     private int m_score1 = 0;
     private int m_score2 = 0;
